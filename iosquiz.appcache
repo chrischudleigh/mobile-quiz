@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# updated 2pm 19/3/2015
+CACHE:
+js/quizoo2.js
+js/questions-new.json
+js/hb-ext.js
+js/ajax.js
+js/hb.js
+js/jquery-1.7.js
+css/rachet.min.css
+js/hammer.min.js
+js/fastclick.js
+js/zepto.js
+css/quiz.css
+contact.html
+about.html
+NETWORK:
+*

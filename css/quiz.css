@@ -1,0 +1,165 @@
+﻿ .radio {
+            display: block;
+            cursor: pointer;
+        }
+
+        .quizError {
+            background-color: rgba(241, 221, 221, 1);
+            padding: 0.5em;
+        }
+
+        input[type=radio] {
+            width: 2em;
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            opacity: 0;
+        }
+
+            input[type=radio] + label {
+                display: inline-block;
+                margin-left: -36px;
+                line-height: 24px;
+                width: 100%;
+                padding: 11px 11px 11px 15px;
+            }
+
+            input[type=radio]:checked + label {
+                background-color: rgba(184, 212, 255, 1);
+            }
+
+        .table-view-cell.answer {
+            padding: 0;
+        }
+
+        p.correct {
+            color: green;
+        }
+
+        p.incorrect {
+            color: red;
+        }
+
+        .show {
+            left: 0;
+        }
+
+        .hide .bar {
+            display: none;
+        }
+
+        .content {
+            top: 44px;
+            bottom: 50px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .content-padded {
+            padding: 12px;
+            margin: 0;
+        }
+
+        .hide {
+            position: absolute;
+            left: -1000px;
+        }
+
+        .card.hideleft {
+            position: absolute;
+            left: -1024px;
+        }
+
+        .card.hideright {
+            position: absolute;
+            left: 1024px;
+        }
+        /*iphone 5,6 landscape*/
+        @media only screen and (min-device-width : 320px) and (max-device-width : 667px) and (orientation : landscape) {
+            .card.hideleft {
+                position: absolute;
+                left: -667px;
+            }
+
+            .card.hideright {
+                position: absolute;
+                left: 667px;
+            }
+        }
+        /* iphone 5,6 in portrait*/
+        @media only screen and (min-device-width : 320px) and (max-device-width : 667px) and (orientation : portrait) {
+            .card.hideleft {
+                position: absolute;
+                left: -375px;
+            }
+
+            .card.hideright {
+                position: absolute;
+                left: 375px;
+            }
+        }
+       /* iPhone 6 Plus in landscape */
+        @media only screen 
+and (min-device-width : 540px) 
+and (max-device-width : 960px) 
+and (orientation : landscape) { 
+                        
+            .card.hideleft {
+                position: absolute;
+                left: -960px;
+            }
+
+            .card.hideright {
+                position: absolute;
+                left: 960px;
+            }
+
+        }
+         /* iPhone 6 Plus in portrait */
+        @media only screen 
+and (min-device-width : 540px) 
+and (max-device-width : 960px) 
+and (orientation : portrait) { 
+                        
+            .card.hideleft {
+                position: absolute;
+                left: -540px;
+            }
+
+            .card.hideright {
+                position: absolute;
+                left: 540px;
+            }
+
+        }
+        .quiz {
+            position: relative;
+        }
+
+        .card {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            transition: left linear 0.1s;
+            margin: 0;
+        }
+
+        #appContent .content {
+            transition: left linear 0.5s;
+            z-index: 2;
+        }
+
+        #pageContent .content {
+            z-index: 0;
+        }
+
+        .noTransition {
+            -webkit-transition: none !important;
+            -moz-transition: none !important;
+            -o-transition: none !important;
+            transition: none !important;
+        }
+
+        #countTime {
+            text-align: center;
+            padding: 0.5em 0;
+        }
