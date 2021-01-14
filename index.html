@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE HTML MANIFEST="iosquiz.appcache">
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>5 min Web Quiz</title>
@@ -16,12 +17,13 @@
     <script src="./js/debounce.js"></script>
     <script src="./js/fastclick.js"></script>
     <script>
-	$(function() {
-    FastClick.attach(document.body);
-});
-</script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+    </script>
     <link href="./css/quiz.css" rel="stylesheet" />
 </head>
+
 <body>
     <header class="bar bar-nav">
         <h1 class="title">Five minute Web Quiz</h1>
@@ -43,8 +45,9 @@
                         <div class="quizError"></div>
                         <div class="quizAnswers"></div>
                     </div>
-                    
-                    <button type="button" class="btn" id="myStart" style="display:block ;margin:0 auto;padding:3em"></button>
+
+                    <button type="button" class="btn" id="myStart"
+                        style="display:block ;margin:0 auto;padding:3em"></button>
                 </div>
             </form>
         </div>
@@ -95,7 +98,7 @@
                     $('#appContent .content').css('width', appWidth + "px");
                     $('#appContent .content').addClass("hide");
                     ajaxRequest("./about.html", myOutputContent, function (resp) {
-                        myOutputContent.innerHTML = resp.slice(resp.search("<p>Five minute Web Quiz</p>"));
+                        myOutputContent.innerHTML = resp.slice(resp.search("<p>Five minute Web Quiz for mobile</p>"));
                     });
                     $('#myNav a').removeClass('active');
                     $('#myNav #about').addClass('active');
@@ -146,4 +149,5 @@
         document.getElementById('about').click();
     </script>
 </body>
+
 </html>
